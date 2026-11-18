@@ -1,0 +1,78 @@
+<style>
+  body {
+    margin-left: 500px;
+  }
+  .pagination {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: medium;
+  }
+  .link {
+    text-decoration: underline;
+    color: rgb(75, 69, 69);
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: medium;
+  }
+
+  .shadow {
+    background-color: green;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px rgb(185, 185, 179);
+  }
+
+  .shadow:active {
+    margin-left: 2px;
+    margin-top: 2px;
+    box-shadow: none;
+  }
+
+  .stretch {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: green;
+    border: none;
+    color: white;
+    transition:
+      padding-top 1s,
+      padding-bottom 1s,
+      padding-right 1s,
+      padding-left 1s;
+  }
+
+  .stretch:active {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+</style>
+
+<body>
+  <h3>Pagination</h3>
+  <button class="pagination">Back</button>
+  <a class="link">1</a>
+  <a class="link">2</a>
+  <a class="link">3</a>
+  <a class="link">4</a>
+  <a class="link">5</a>
+  <button class="pagination">Next</button>
+
+  <h3>Stretch</h3>
+  <button class="stretch">Stretch</button>
+
+  <h3>3D click shadow</h3>
+  <button class="shadow">Shadow</button>
+</body>
